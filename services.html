@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">    
+    <title>kaiftokare - A Social Nevla</title>
+</head>
+<body>    
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="image/logo.jpg.jpeg" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html"><button class="btn">Services</button></a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>        
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>       
+    </nav>
+    <section class="background servicesSection services">        
+        <div class="box-main">
+
+            <div class="firsthalf">
+                <p class="text-big">kaiftokare</p>
+                <p class="text-small">Crafting visual stories</p>
+                <div class="buttons">
+                    <a href="https://www.youtube.com/channel/UCRmKUDCAjbn1EbrLYfj8l4A"><button class="btn">Subscribe</button></a>                                                            
+                    <a href="https://youtu.be/hSNM10b3j7U"><button class="btn">Watch Video</button></a>                                                          
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <img src="image/logo.jpg.jpeg" alt="Youtube Thubnail"></div>
+        </div>    
+    </section>
+    <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wXhLbcCcmzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jd9qk3SibxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/irFaDRQBVlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PHGMZYPNXsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+    </div>
+    <section class="section1">
+        <div class="paras"> 
+            <p class="sectionTag">Youtube Journey</p>
+             <p class="sectionSubTag"> I am fortunate to be living in an era where technology and creativity go hand in hand. One platform that has revolutionized the way we share our stories and experiences is YouTube. Let me take you on a journey through the evolution and impact of this incredible platform.</p>
+
+                <p class="sectionSubTag">YouTube was founded in 2005 with a simple idea: to provide a space for people to share and discover videos. It started as a small website, but quickly gained popularity, allowing users to upload, view, and share videos with the world. Today, it has become the go-to platform for content creators, vloggers, and filmmakers alike.</p>
+                
+                    <p class="sectionSubTag">For me, YouTube has been a game-changer. It has provided an outlet for my passion for recording life and capturing moments through videography. Armed with just my phone and my creativity, I embarked on my own YouTube journey, creating lifestyle vlogs and travel vlogs that showcase the essence of who I am.</p>
+                
+                        <p class="sectionSubTag">YouTube has not only given me a platform to share my experiences but has also connected me with a diverse and global audience. Through my videos, I can inspire, entertain, and educate others, while also learning from their perspectives and feedback.</p>
+                
+                            <p class="sectionSubTag">Creating content for YouTube has allowed me to hone my videography skills and unleash my creativity. It has challenged me to think outside the box, experiment with different editing techniques, and constantly improve my storytelling abilities. With each video I create, I aim to transport my viewers into my world, allowing them to experience the beauty of life through my lens.</p>
+                
+                                <p class="sectionSubTag">But YouTube is not just about sharing videos. It's a community of like-minded individuals who support and encourage one another. I have connected with fellow creators, collaborated on exciting projects, and built meaningful relationships along the way. The YouTube community has been a constant source of inspiration, pushing me to strive for excellence and never stop learning.</p>
+                
+                                    <p class="sectionSubTag">As I continue my journey on YouTube, I am excited to explore new destinations, share my insights, and showcase my growth as a content creator. I am grateful for the opportunity to be a part of this incredible platform and to connect with all of you who share my passion for capturing life through videography.</p>
+                
+                                        <p class="sectionSubTag">Thank you for being a part of my YouTube journey. Together, let's celebrate the power of storytelling, the joy of exploration, and the beauty of life.</p>
+                
+                                            <p class="sectionSubTag">Stay tuned for more exciting content!</p>
+
+
+        </div>
+    </section>
+    <section class="contact" id="contact">        
+        <h2 class="Text-center">Contact Us</h2>
+            <div class="Form">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" name="Name" id="Name" placeholder=" Enter your name">
+                <input type="number" name="Phone no." id="Phone no." placeholder=" Enter your phone no.">
+                <input type="email" name="email" id="email" placeholder=" Enter your email">                
+                    <textarea name="textbody" id="Message" cols="30" rows="5" placeholder="Elaborate Your Concern"></textarea>
+                <button class="btn btn-dark">Submit</button>
+            </form>
+            </div>        
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2023 www.kaiftokare.com - All Rights Reserved
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "clickaife@gmail.com",
+            Password : "Photography@786",
+            To : 'muskanringceremony@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Contact from website",
+            Body : "Name" +document.getElementById("Name").value
+            + "<br> Phone no.: " +document.getElementById("Phone no.").value
+            + "<br> email: " +document.getElementById("email").value
+            + "<br> Message: " +document.getElementById("Message").value
+            }).then(
+        message => alert("Message Sent Successfully")
+        );
+        }
+    </script>
+</body>
+</html>
